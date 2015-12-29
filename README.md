@@ -2,11 +2,11 @@
 
 This is a bare-bones, no-bullshit example of building a static JavaScript demo with [budo](https://github.com/mattdesl/budo) and [browserify](https://github.com/substack/node-browserify).
 
-Click [here](https://mattdesl.github.io/browserify-example) to see the live demo. The source is [here](./index.js).
-
-[<img src="http://i.imgur.com/f6ZxAN0.png" width="75%" />](https://mattdesl.github.io/browserify-example)
-
 The demo plays a synth sound with WebAudio and [ToneJS](https://github.com/Tonejs/Tone.js).
+
+[<img src="http://i.imgur.com/Ocb4CVv.png" width="75%" />](https://mattdesl.github.io/browserify-example)
+
+Click [here](https://mattdesl.github.io/browserify-example) to see the live demo. The source is [here](./index.js).
 
 ## Motivation
 
@@ -14,7 +14,7 @@ This template is for developers looking to tinker with JavaScript and npm module
 
 It is the workflow I use for [prototyping](http://mattdesl.svbtle.com/some-javascript-sketches) with WebGL, canvas, and other APIs.
 
-This demo uses [ToneJS](https://www.npmjs.com/package/tone) to interface with WebAudio, but the workflow supports many npm modules such as:
+This demo uses [ToneJS](https://www.npmjs.com/package/tone) to interface with WebAudio, but this workflow supports many npm modules such as:
 
 - [pixi.js](https://www.npmjs.com/package/pixi.js)
 - [lodash](https://www.npmjs.com/package/lodash)
