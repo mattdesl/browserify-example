@@ -6,6 +6,8 @@ Click [here](https://mattdesl.github.io/browserify-example) to see the live demo
 
 [<img src="http://i.imgur.com/f6ZxAN0.png" width="75%" />](https://mattdesl.github.io/browserify-example)
 
+The demo plays a synth sound with WebAudio and [ToneJS](https://github.com/Tonejs/Tone.js).
+
 ## Motivation
 
 This template is for developers looking to tinker with JavaScript and npm modules, without getting caught up in Gulp/Grunt scripts, Webpack configuration, React/Angular/etc, and other [complex modern practices](https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4#.t213ju5oj). It tries to Keep It Simple, Stupid (KISS) without sacrificing the developer experience.
