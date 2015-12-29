@@ -149,6 +149,8 @@ node_modules
 
 ### ES2015 Transpiling
 
+<sup>*(this step is optional)*</sup>
+
 Follow these steps to add ES2015 support, using [Babel](https://babeljs.io).
 
 Install [babelify](http://npmjs.com/package/babelify) (browserify transform for Babel) and a ES2015 language preset.
