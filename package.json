@@ -1,0 +1,33 @@
+{
+  "name": "browserify-example",
+  "version": "1.0.0",
+  "description": "example with browserify + npm",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "tone": "^0.6.0"
+  },
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "budo": "^7.1.0",
+    "uglify-js": "^2.6.1"
+  },
+  "scripts": {
+    "start": "budo index.js:bundle.js --live",
+    "build": "browserify index.js | uglifyjs -cm > bundle.js"
+  },
+  "keywords": ["budo","browserify","example","help","tutorial","npm"],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/browserify-example.git"
+  },
+  "homepage": "https://github.com/mattdesl/browserify-example",
+  "bugs": {
+    "url": "https://github.com/mattdesl/browserify-example/issues"
+  }
+}
