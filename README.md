@@ -157,7 +157,7 @@ npm install babelify babel-preset-es2015 --save-dev
 
 Add a `.babelrc` file to the directory:
 
-```json
+```js
 {
   presets: [ "es2015" ]
 }
