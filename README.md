@@ -180,7 +180,7 @@ This is convenient, but not always the best course if you are building a *module
 
 ##### Option B: Explicit Transforms
 
-Alternatively, you can explicitly list the transforms during the dev/build step.
+Alternatively, you can explicitly list the transforms during the dev/build step. Use the `--transform` or `-t` flag:
 
 ```js
   "scripts": {
