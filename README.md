@@ -21,7 +21,7 @@ This demo uses [ToneJS](https://www.npmjs.com/package/tone) to interface with We
 - [three](https://www.npmjs.com/package/three) (ThreeJS)
 - [dom-css](https://www.npmjs.com/package/dom-css)
 
-It uses [budo](https://github.com/mattdesl/budo) for development and bundles to a static JavaScript file with [browserify](https://github.com/substack/node-browserify) and [uglify-js](http://npmjs.com/package/uglify-js). It uses plain ES5 JavaScript (no transpilers) and CSS for styles.
+It uses [budo](https://github.com/mattdesl/budo) for development and bundles to a static JavaScript file with [browserify](https://github.com/substack/node-browserify) and [uglify-js](http://npmjs.com/package/uglify-js). It uses plain ES5 JavaScript (no transpilers) and CSS for styles, but I've included some instructions on [ES2015 Transpiling](#es2015-transpiling).
 
 ## Quick Start
 
@@ -130,7 +130,6 @@ To release, you need an [index.html](./index.html) and optional [style.css](./st
 </body>
 ```
 
-
 You can run the following to build a static JavaScript bundle, ready for `gh-pages` or your host of choice!
 
 ```sh
@@ -145,6 +144,52 @@ node_modules
 *.log
 .DS_Store
 ```
+
+### ES2015 Transpiling
+
+Follow these steps to add ES2015 support, using [Babel](https://babeljs.io).
+
+Install [babelify](http://npmjs.com/package/babelify) (browserify transform for Babel) and a ES2015 language preset.
+
+```sh
+npm install babelify babel-preset-es2015 --save-dev
+```
+
+Add a `.babelrc` file to the directory:
+
+```json
+{
+  presets: [ "es2015" ]
+}
+```
+
+From here, you have two options.
+
+##### Option A: Package Transforms
+
+Add a `"browserify"` field to your `package.json` configuration:
+
+```js
+  ...
+  "browserify": {
+    "transform": [ "babelify" ]
+  }
+```
+
+This is convenient, but not always the best course if you are building a *module* or library.
+
+##### Option B: Explicit Transforms
+
+Alternatively, you can explicitly list the transforms during the dev/build step.
+
+```js
+  "scripts": {
+    "start": "budo index.js:bundle.js --live -- -t babelify",
+    "build": "browserify index.js -t babelify | uglifyjs -cm > bundle.js"
+  }
+```
+
+> :bulb: budo assumes all options after `--` are for browserify. 
 
 ### further reading
 
