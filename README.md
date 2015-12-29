@@ -88,7 +88,7 @@ console.log(url.parse(window.location.href));
 Once you've got a `package.json`, run the following:
 
 ```sh
-# install our ToneJS dependency
+# install our client-side dependencies
 npm install tone --save
 
 # install some build/dev tools
