@@ -120,7 +120,18 @@ Open [http://localhost:9966/](http://localhost:9966/) and you should see our `co
 
 ### release
 
-To release, you need an [index.html](./index.html) and optional [style.css](./style.css). You can run the following to build a static JavaScript bundle, ready for `gh-pages` or your host of choice!
+To release, you need an [index.html](./index.html) and optional [style.css](./style.css). Make sure the HTML includes a `<script>` tag like so:
+
+```html
+...
+<body>
+  <!-- used by dev/build script -->
+  <script src="bundle.js"></script>
+</body>
+```
+
+
+You can run the following to build a static JavaScript bundle, ready for `gh-pages` or your host of choice!
 
 ```sh
 npm run build
