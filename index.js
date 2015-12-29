@@ -3,9 +3,8 @@
   example of using browserify + npm.
  */
 
-// Require some modules
-var url = require('url');   // Node built-in
-var Tone = require('tone'); // installed from npm
+// Our third-party dependency from npm
+var Tone = require('tone');
 
 // An example of ToneJS
 var synth = new Tone.SimpleSynth().toMaster();
@@ -19,5 +18,8 @@ function beep (ev) {
   synth.triggerAttackRelease('C4', '8n');
 }
 
-// Small example of using a Node built-in
+// You can also use built-in Node modules
+var url = require('url');
+
+// e.g.
 console.log(url.parse(window.location.href));
