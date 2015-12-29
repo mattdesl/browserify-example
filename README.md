@@ -1,12 +1,18 @@
 # browserify-example
 
-This is a bare-bones, no-bullshit example of using browserify and npm together.
+This is a bare-bones, no-bullshit example of building a static JavaScript demo with [budo](https://github.com/mattdesl/budo) and [browserify](https://github.com/substack/node-browserify).
 
-Click [here](https://mattdesl.github.io/browserify-example) to see the live demo.
+Click [here](https://mattdesl.github.io/browserify-example) to see the live demo. The source is [here](./index.js).
 
 [<img src="http://i.imgur.com/f6ZxAN0.png" width="75%" />](https://mattdesl.github.io/browserify-example)
 
-It brings in [ToneJS](https://www.npmjs.com/package/tone) from npm, but this workflow supports various modules on npm such as:
+## Motivation
+
+This template is for developers looking to tinker with JavaScript and npm modules, without getting caught up in Gulp/Grunt scripts, Webpack configuration, React/Angular/etc, and other [complex modern practices](https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4#.t213ju5oj). It tries to Keep It Simple, Stupid (KISS) without sacrificing the developer experience.
+
+It is the workflow I use for [prototyping](http://mattdesl.svbtle.com/some-javascript-sketches) with WebGL, canvas, and other APIs.
+
+This demo uses [ToneJS](https://www.npmjs.com/package/tone) to interface with WebAudio, but the workflow supports many npm modules such as:
 
 - [pixi.js](https://www.npmjs.com/package/pixi.js)
 - [lodash](https://www.npmjs.com/package/lodash)
