@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "budo index.js:bundle.js --live",
-    "build": "browserify index.js | uglifyjs -cm > bundle.js"
+    "build": "browserify index.js | uglifyjs -m -c warnings=false > bundle.js"
   },
   "keywords": ["budo","browserify","example","help","tutorial","npm"],
   "repository": {
