@@ -18,7 +18,7 @@
     "uglify-js": "^2.6.1"
   },
   "scripts": {
-    "start": "budo index.js:bundle.js --live",
+    "start": "budo index.js:bundle.js --live -o",
     "build": "browserify index.js | uglifyjs -m -c warnings=false > bundle.js"
   },
   "keywords": ["budo","browserify","example","help","tutorial","npm"],
