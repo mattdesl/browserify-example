@@ -29,7 +29,7 @@ It uses [budo](https://github.com/mattdesl/budo) for development and bundles to 
 
 You can clone this template for a quick start, or follow the [Custom Setup](#custom-setup) to get this working from scratch.
 
-First, make sure `git`, `npm` (v2 or higher), and `node` (v0.12 or higher) is installed.
+First, make sure `git`, `npm` (v3 or higher), and `node` (v6 or higher) is installed. It's recommended to download the latest versions of these tools.
 
 Now clone this repo and `cd` into it, then install the project's dependencies:
 

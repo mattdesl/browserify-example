@@ -13,15 +13,22 @@
     "tone": "^0.6.0"
   },
   "devDependencies": {
-    "browserify": "^12.0.1",
-    "budo": "^7.1.0",
+    "browserify": "^14.0.0",
+    "budo": "^9.4.7",
     "uglify-js": "^2.6.1"
   },
   "scripts": {
     "start": "budo index.js:bundle.js --live",
     "build": "browserify index.js | uglifyjs -m -c warnings=false > bundle.js"
   },
-  "keywords": ["budo","browserify","example","help","tutorial","npm"],
+  "keywords": [
+    "budo",
+    "browserify",
+    "example",
+    "help",
+    "tutorial",
+    "npm"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/mattdesl/browserify-example.git"
