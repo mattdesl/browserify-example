@@ -14,12 +14,13 @@
   },
   "devDependencies": {
     "browserify": "^14.5.0",
+    "bubleify": "^1.1.0",
     "budo": "^10.0.4",
     "uglify-js": "^3.3.4"
   },
   "scripts": {
-    "start": "budo index.js:bundle.js --live",
-    "build": "browserify index.js | uglifyjs -m -c warnings=false > bundle.js"
+    "start": "budo index.js:bundle.js --live -- -t bubleify",
+    "build": "browserify index.js -t bubleify | uglifyjs -m -c warnings=false > bundle.js"
   },
   "keywords": [
     "budo",
