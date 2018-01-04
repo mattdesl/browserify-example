@@ -156,7 +156,7 @@ Follow these steps to add ES2015 support, using [Babel](https://babeljs.io).
 Install [babelify](http://npmjs.com/package/babelify) (browserify transform for Babel) and a ES2015 language preset.
 
 ```sh
-npm install babelify babel-preset-es2015 --save-dev
+npm install babelify babel-core babel-preset-es2015 --save-dev
 ```
 
 Add a `.babelrc` file to the directory:
