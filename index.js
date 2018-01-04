@@ -4,22 +4,22 @@
  */
 
 // Our third-party dependency from npm
-var Tone = require('tone');
+const Tone = require('tone');
 
 // An example of ToneJS
-var synth = new Tone.SimpleSynth().toMaster();
+const synth = new Tone.SimpleSynth().toMaster();
+
+const beep = (ev) => {
+  ev.preventDefault();
+  synth.triggerAttackRelease('C4', '8n');
+};
 
 // Setup events
 window.addEventListener('touchstart', beep);
 window.addEventListener('mousedown', beep);
 
-function beep (ev) {
-  ev.preventDefault()
-  synth.triggerAttackRelease('C4', '8n');
-}
-
 // You can also use built-in Node modules
-var url = require('url');
+const url = require('url');
 
 // e.g.
 console.log(url.parse(window.location.href));
